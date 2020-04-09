@@ -5,14 +5,14 @@
     </head>
     <body>
         <h1>Joe's useful HTML scrapbook</h1>
-        <h5>This scrapbook has been put together to list the most useful HTML elements and their usage. Somewhere to reference if ever stuck!</h5>
+        <h3>This scrapbook has been put together to list the most useful HTML elements and their usage. Somewhere to reference if ever stuck!</h3>
 
         <h1>Basic HTML</h1>
             <p>&lt;!DOCTYPE&gt; - defines the document type (for HTML 5 would be &lt;!DOCTYPE html&gt;)</p>
             <p>&lt;html&gt; - defines a HTML document (all your HTML elements sit within this)</p>
-            <p>&lt;head&gt; - defines information about the document</p>
+            <p>&lt;head&gt; - defines information about the document. not visible but veryu important for browsers, languages etc</p>
             <p>&lt;title&gt; - defines a title for the document which will be output in the tab through a web browser (sits within the &lt;head&gt;)</p>
-            <p>&lt;body&gt; - defines the documents body (where main chunk of your html goes!)</p>
+            <p>&lt;body&gt; - defines the documents body (where main chunk of your html goes!). What is seen when you open the page through a browser</p>
             <p>&lt;header&gt; - defines the header within a html page</p>
             <p>&lt;footer&gt; - defines the footer within a html page</p>
 
@@ -55,6 +55,44 @@
             <p>&lt;img src="burnley.gif" alt="Burnley badge" height="60" width="60" /&gt;</p>
             <p><b>Note src</b> - (mandatory) the location of the image relative to location of the HTML file, unless a full (absolute) URL (a.k.a http://) is given</p>
             <p><b>Note alt</b> - (optional) what appears in the tooltip when you hover over the image. Good for accessibility. Best practice.</p>  
-            <p><b>Note width & height</b> - would be done through css just showing html here</p>   
+            <p><b>Note width & height</b> - would be done through css just showing html here</p>  
+            <p>&lt;figure&gt; - good practice when intergrating with css. a figure & caption for image
+            &lt;figure&gt;</p>
+            <figure>
+                <img src="turf-moor.png" alt="Turf Moor" height="120" width="240">
+                <figcaption>Fig.1 - Turf Moor, Burnley</figcaption>
+            </figure>
+            <p>&lt;img src="turf-moor.png" alt="Turf Moor" height="120" width="240"&gt;
+                &lt;figcaption&gt;Fig.1 - Turf Moor, Burnley&lt;/figcaption&gt;
+            &lt;/figure&gt;</p>
+            <p>&lt;audio&gt; - audio content</p>
+            <audio controls>
+                <source src="homeshake.mp3" type="audio/mpeg">
+            </audio>
+            <p>&lt;audio controls&gt;
+                &lt;source src="homeshake.mp3" type="audio/mpeg"&gt;
+            &lt;/audio&gt;</p>
+            <p>&lt;video&gt; - video content</p>
+            
+            <h1>Links (anchors)</h1>
+            <p>&lt;a&gt; - a <a href="https://www.burnleyfootballclub.com">hyperlink</a> (to web page or a page <a href="linkpage.html">within our site</a>)</p>
+            <p>&lt;a href="https://www.burnleyfootballclub.com"&gt;hyperlink&lt;/a&gt; (to web page or a page &lt;a href="linkpage.html"&gt;within our site)&lt;/a&gt;</p>
+            <p>Note <b>href</b> - (mandatory) the location of what were are linking to relative to location of the HTML file, unless a full (<i>absolute</i>) URL (a.k.a http://) is given</p>
+            <p>&lt;link&gt; - link between document & external resource such as stylesheet (will sit in the head of your document)</p>
+
+            <h1>Forms & inputs</h1>
+            <p>Take a look at w3schools <a href="https://www.w3schools.com/TAGS/ref_byfunc.asp">Forms and Inputs</a> section for more detail (also <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/YourfirstHTML_form">forms link</a> from Manchester Codes app)</p>
+
+            <h1>Semantics</h1>
+            <p>Semantics are best practice. Use the correct tags to make your life easy especially when styling. Don't us id & &lt;div&gt; all the time. Take a look at w3schools <a href="https://www.w3schools.com/TAGS/ref_byfunc.asp">Semantics</a> section for more details (also <a href="https://app.manchestercodes.com/module/programming-foundations/chapter/html?pageId=ivenTUcuQlP3Eo4gpVjl">semantics links</a> through Manchester Codes app)</p>
+
+            <h1>Tables</h1>
+
+            <p>Take a look <a href="https://html.com/tables/">here</a> for more info on tables</p>
+
+            <h1>Buttons</h1>
+
+            <p>Take a lot <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button">here </a>for more info on buttons</p>
+            
     </body>
 </html>
